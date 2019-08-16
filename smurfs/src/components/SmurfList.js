@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
+import { getSmurfsData } from '../store/actions';
+// import {getSmurfsData, deleteSmurf, DELETE_SMURF_START} from '../store/actions';
 
-import { getSmurfsData, deleteSmurf } from '../store/actions';
-import Smurf from './Smurf';
 
 const SmurfList = props => {
 
@@ -12,13 +12,19 @@ const SmurfList = props => {
     props.getSmurfsData();
   };
 
+  // const deleteSmurfs = e => {
+  //   e.preventDefault();
+  //   props.deleteSmurf();
+  // };
+
 
   return (
     <div>
           <button onClick={getSmurfs}>
-            Get Smurfs
+            List Smurfs
           </button>
     </div>
+
   )};
 
 
@@ -35,6 +41,6 @@ export default connect(
   mapStateToProps,
   {
     getSmurfsData,
-    deleteSmurf
+    // deleteSmurf
   }
 )(SmurfList);

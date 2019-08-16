@@ -61,24 +61,24 @@ export const reducer = (state = initialState, action) => {
         addingSmurf: false,
         error: action.payload
       };
-    case DELETE_SMURF_START:
-      return {
-        ...state,
-        deletingSmurf: true,
-        error: "",
-      };
-    case DELETE_SMURF_SUCCESS:
-      return {
-        ...state,
-        deletingSmurf: false,
-        error: "",
-        smurfs: action.payload
-      };
-    case DELETE_SMURF_FAILURE:
-      return {
-        ...state,
-        deletingSmurf: false,
-        error: action.payload
-      }
+  //   case DELETE_SMURF_START:
+  //     return {
+  //       ...state,
+  //       deletingSmurf: true,
+  //       error: "",
+  //     };
+  //   case DELETE_SMURF_SUCCESS:
+  //     return {
+  //       ...state,
+  //       deletingSmurf: false,
+  //       error: "",
+  //       smurfs: action.payload
+  //     };
+  //   case DELETE_SMURF_FAILURE:
+  //     return {
+  //       ...state,
+  //       deletingSmurf: false,
+  //       error: action.payload
+  //     }
   }
 };
