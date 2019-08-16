@@ -1,5 +1,8 @@
 .App {
+  padding: 2rem;
   text-align: center;
+  background-image: linear-gradient(to bottom right, dodgerblue, lightskyblue);
+  color: white;
 }
 
 .App-logo {
@@ -12,10 +15,12 @@
   height: 150px;
   padding: 20px;
   color: white;
+  line-height: 2rem;
+
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 3.5em;
 }
 
 .App-intro {
@@ -26,3 +31,4 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
